@@ -29,6 +29,25 @@
      <groupId>org.springframework.boot</groupId>
      <artifactId>spring-boot-devtools</artifactId>
    </dependency>   
+   
+   <!-- Ribbon相关 -->
+   <!-- start -->
+   <!-- eureka后面没有跟service说明是客户端连接，这里的ribbon需要和eureka整合 -->
+   <dependency>
+     <groupId>org.springframework.cloud</groupId>
+     <artifactId>spring-cloud-starter-eureka</artifactId>
+   </dependency>
+   <dependency>
+     <groupId>org.springframework.cloud</groupId>
+     <artifactId>spring-cloud-starter-ribbon</artifactId>
+   </dependency>
+   <!-- config与eureka有关系 -->
+   <dependency>
+     <groupId>org.springframework.cloud</groupId>
+     <artifactId>spring-cloud-starter-config</artifactId>
+   </dependency>
+   <!-- end -->
+   
   </dependencies>
  
  
